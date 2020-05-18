@@ -4,44 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roziana Rodriguest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Roziana Rodrigues</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="menu">
+        <nav class="menu" id="home">
             <ul>
-                <li><a href="#">SOBRE</a></li>
-                <li><a src="#portifolio">PORTIFÓLIO</a></li>
-                <li><a href="#">CONTATO</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#projects">portfolio</a></li>
+                <li><a href="#about">about</a></li>
             </ul>
         </nav>
-        <div class="main">
-            <h1 class="site-title">Roziana Rodrigues</h1>
-            <p class="site-subtitle">{ jr web developer }</p>
-            <img class="bg-img" src="https://www.coderfactory.com.br/cf-assets/uploads/2019/09/formacao-frontend.png" alt="code-background">
-        </div>
     </header>
-    <section name="portifolio">
-        <h2>Portfólio</h2>
-        <figure>
-            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-            <figcaption>eCommerce</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-            <figcaption>Mobile</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-            <figcaption>Web design</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-            <figcaption>Projetos pessoais</figcaption>
-        </figure>
-    </section>
+    <div>
+        <section id="about">
+            <header>
+                <p class=title>Roziana Rodrigues</p>
+                <p class="subtitle">{ jr front-end developer }</p>
+
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="content">
+                            <p class="timeline-title">Responsive Web Design Certification</p>
+                            <p class="timeline-subtitle">2020 - freeCodeCamp</p>
+                            <p class="timeline-content">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. <a href="https://www.freecodecamp.org/certification/roziana_rdrgs/responsive-web-design" target="_blank">Certificate here.</a>.</p>
+                        </div>
+                        <div class="content">
+                            <p class="timeline-title">JavaScript Algorithms and Data Structures Certification</p>
+                            <p class="timeline-subtitle">2020 - freeCodeCamp</p>
+                            <p class="timeline-content">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. <a href="https://www.freecodecamp.org/certification/roziana_rdrgs/javascript-algorithms-and-data-structures"
+                                    target="_blank">Certificate here.</a>.</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <p class="timeline-title">Technical Course in Computer</p>
+                            <p class="timeline-subtitle">2014 - Senac Santa Maria</p>
+                            <p class="timeline-content">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+        </section>
+    </div>
+    <div>
+        <section id="projects">
+            <header>
+                <h1>{ these are some of my projects }</h1>
+            </header>
+
+            <ul id="project-tile">
+
+                <li class="project-item">
+                    <img class="project-image" src="./img/random-quote-machine.JPG" alt="Random Quote Machine">
+                    <div class="button">
+                        <a href="https://roziana-rdrgs.github.io/random-quote-machine/" target="_blank">Random Quote Machine</a>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <img class="project-image" src="./img/to-do-list.JPG" alt="To-Do List">
+                    <div class="button">
+                        <a href="https://roziana-rdrgs.github.io/to-do-list/" target="_blank">To-Do List</a>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </div>
+
+    <div>
+        <section id="contact">
+            <header>
+                <h1>Let's work together...</h1>
+                <p>How do you take your coffee?</p>
+            </header>
+
+            <ul class="flex-links">
+                <li class="link-item">
+                    <a class="button" id="profile-link" href="https://github.com/roziana-rdrgs/" target="_blak">
+                        <i class="fa fa-github-square"></i> <span>Git Hub </span>
+                    </a>
+                </li>
+
+                <li class="link-item">
+                    <a class="button" href="https://www.linkedin.com/in/roziana-rdrgs/" target="_blak">
+                        <i class="fa fa-linkedin-square"></i> <span>LinkedIn </span>
+                    </a>
+                </li>
+
+                <li class="link-item">
+                    <a class="button" href="https://www.facebook.com/roziana.rdrgs" target="_blak">
+                        <i class="fa fa-facebook-square"></i><span>Facebook </span>
+                    </a>
+                </li>
+
+                <li class="link-item">
+                    <a class="button" href="https://twitter.com/roziana_rdrgs" target="_blak">
+                        <i class="fa fa-twitter-square"></i> <span>Twitter </span>
+                    </a>
+                </li>
+
+                <li class="link-item">
+                    <a class="button" href="https://www.instagram.com/roziana.rdrgs/" target="_blak">
+                        <i class="fa fa-instagram"></i> <span>Instagram </span>
+                    </a>
+                </li>
+
+                <li class="link-item">
+                    <a class="button" href="https://codepen.io/roziana-rdrgs" target="_blak">
+                        <i class="fa fa-codepen"></i> <span>CodePen </span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+    </div>
+
+    <div>
+        <section id="footer">
+            <nav class="menu-footer">
+                <ul>
+                    <li><a href="#home"><i class="fa fa-home"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
 </body>
 
 </html>
