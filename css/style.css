@@ -40,6 +40,7 @@ body {
 #projects {
     background-color: #424c6d;
     color: #ffd378;
+    min-height: 100vh;
 }
 
 #projects h1 {
@@ -47,11 +48,12 @@ body {
     font-weight: thin;
     text-align: center;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 65px;
+    padding-bottom: 50px;
 }
 
 #contact {
+    min-height: 100vh;
     background-color: #c9be78;
     color: #424c6d;
 }
@@ -132,11 +134,12 @@ li a:hover {
     display: flex;
     flex-wrap: wrap;
     color: #424c6d;
+    padding: 30px;
 }
 
 .project-image {
     background: #dfe2ec;
-    width: 100%;
+    width: 75%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -165,7 +168,7 @@ li a:hover {
 
 .button {
     display: block;
-    width: 100%;
+    width: 75%;
     font-size: 22px;
     background: #ffdb4d;
     padding: 0px;
@@ -194,6 +197,7 @@ li a:hover {
 .flex-links {
     list-style: none;
     margin: auto;
+    margin-top: 25px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -223,7 +227,7 @@ li a:hover {
 }
 
 .flex-links li .button {
-    font-size: medium;
+    font-size: large;
     width: auto;
     background: #c9be78;
     border: none;
@@ -261,12 +265,9 @@ li a:hover {
     right: 0;
 }
 
-#footer {
+.menu-footer-contact {
     background: #c9be78;
-}
-
-.menu-footer {
-    background: #c9be78;
+    background: transparent;
     color: #424c6d;
     overflow: hidden;
     margin-bottom: 0px;
@@ -275,7 +276,7 @@ li a:hover {
     padding: 0;
 }
 
-.menu-footer ul {
+.menu-footer-contact ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -283,20 +284,91 @@ li a:hover {
     background: #c9be78;
 }
 
-.menu-footer li {
+.menu-footer-contact li {
     float: right;
 }
 
-.menu-footer li a {
+.menu-footer-contact li a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 24px;
 }
 
-.menu-footer li a:hover {
-    background-color: #c9be78;
+.menu-footer-contact li a:hover {
+    background-color: transparent;
+}
+
+.menu-footer-projects {
+    background: #424c6d;
+    color: #c9be78;
+    overflow: hidden;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+}
+
+.menu-footer-projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #424c6d;
+}
+
+.menu-footer-projects li {
+    float: right;
+}
+
+.menu-footer-projects li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu-footer-projects li a:hover {
+    background-color: transparent;
+}
+
+.menu-footer-about {
+    background: #ffd378;
+    color: #424c6d;
+    overflow: hidden;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+}
+
+.menu-footer-about ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #ffd378;
+}
+
+.menu-footer-about li {
+    float: right;
+}
+
+.menu-footer-about li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu-footer-about li a:hover {
+    background-color: transparent;
 }
 
 
@@ -400,4 +472,20 @@ li a:hover {
     .right {
         left: 0%;
     }
+}
+
+.button-top {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
 }
